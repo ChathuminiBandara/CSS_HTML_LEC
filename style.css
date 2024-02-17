@@ -7,3 +7,26 @@ h3{
     color: gold;
     text-decoration: underline;
 }
+
+input::placeholder{
+    color: red;
+}
+
+input::file-selector-button{
+    background: orange;
+}
+
+
+input::file-selector-button:hover{
+    background-color: green ;
+}
+
+::marker{
+    content: "⭐";
+}
+
+::selection{
+    background-color: purple;
+    color: white;
+}
+
