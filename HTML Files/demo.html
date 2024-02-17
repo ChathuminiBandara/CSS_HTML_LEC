@@ -16,13 +16,23 @@
 
     <style>
 
-       section>div>div:nth-child(1){
+       section>div>div:first-of-type{
            color:deeppink ;
+       }
+
+       section>div>div:last-of-type{
+           color:pink ;
+       }
+
+       section>div>div:first-of-type>p:nth-child(3){
+           color: blueviolet;
        }
 
        /* section>div>div>h3{
             color: purple;
         }*/
+
+
 
     </style>
 
