@@ -23,12 +23,34 @@
             color: red;
         }
 
+
+        .h1class[name]{
+            color: deeppink;
+        }
+
+        h1{
+            color: red;
+        }
+
+        .h1class{  /* (0,0,1,0) */
+            color: yellow;
+        }
+
+        [name] { /* (0,0,1,0) */
+            color: mediumpurple;
+        }
+
     </style>
 
 </head>
 <body>
 
-<button class="custom-btn">Click Here !</button>
+<button  class="custom-btn">Click Here !</button>
+
+
+<h1 class="h1class" name="name"> Hellooo !</h1>
+<h1 class="h1class" > Hellooo !</h1>
+<h1  name="name"> Hellooo !</h1>
 
 </body>
 </html>
