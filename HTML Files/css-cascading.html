@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-cascading</title>
+
+    <style>
+
+        .custom-btn /*(0,0,1,0)*/ {
+            color: green;
+
+        }
+
+        button{ /* (0,0,0,1) */
+            color: blue;
+        }
+
+        #buttn /*(0,1,0,0)*/{
+            color: deeppink;
+        }
+
+        * /*(0,0,0,0)*/ {
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<button class="custom-btn">Click Here !</button>
+
+</body>
+</html>
