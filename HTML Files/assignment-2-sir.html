@@ -5,8 +5,19 @@
     <title>Assignment 03 - Case 02</title>
 
     <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
 
     <style>
+
+        /*body{
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }*/
+
         header {
             background-color: lightblue;
             position: relative;
@@ -52,8 +63,6 @@
 
         }
 
-
-
         #ul{
             margin: 0;
             color: white;
@@ -73,27 +82,64 @@
         main>aside{
             background-color: rebeccapurple;
             width: 20%;
+            padding: 10px;
             position: absolute;
-
+            box-sizing: border-box;
             top: 0;
             bottom: 0;
             margin: auto;
-
-
         }
 
         main>section{
             background-color: lightyellow;
             width: calc(100vw - 20%);
             margin-left: 20%;
-
            /* right: 0;
             position: absolute*/;
-
         }
 
         section>p:first-child{
             margin: 0;
+        }
+
+        #m-div{
+            position: relative;
+            border: deeppink;
+            border-radius: 2px;
+        }
+
+       #div-1{
+
+           width: calc(100%/3);
+           height: 250px;
+           position: absolute;
+       }
+
+        #div-2{
+
+            width: calc(100%/3);
+            height: 250px;
+            top: 0;
+            right: 0;
+
+            position: absolute;
+        }
+
+
+        #div-3{
+
+            width: calc(100%/3);
+            height: 250px;
+            position: absolute;
+            margin:auto;
+            right: 0;
+            left: 0;
+        }
+
+        #p{
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
     </style>
@@ -130,7 +176,16 @@
 
     <!--content-->
     <section>
-        <p>
+
+        <!--gif-->
+        <div id="m-div">
+            <div id="div-1">   <img  id="gif-1" src="/View/monkey.gif">    </div>
+            <div id="div-2">    <img src="/View/monkey.gif">   </div>
+            <div id="div-3">   <img src="/View/monkey.gif">    </div>
+        </div>
+
+
+        <p id="p">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque,
             distinctio eligendi numquam quas quibusdam quisquam, ratione saepe similique, sint soluta totam!
             Amet aspernatur facere laboriosam laudantium molestiae optio similique.
@@ -164,6 +219,8 @@
             Amet.
 
         </p>
+
+
     </section>
 
 
