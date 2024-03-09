@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animations</title>
+
+
+<style>
+
+    div{
+        width: 200px;
+        aspect-ratio: 1/1;
+
+
+        animation-duration: 5s;
+        animation-name: animi;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+
+        /*
+        animation-direction: reverse
+        */
+        animation-direction: alternate-reverse;
+
+        animation-timing-function: ease-out;
+
+       /* animation-play-state: paused , running;*/
+
+    }
+
+    @keyframes animi {
+        from{
+            background-color: #051e5d;
+            margin-left: 0;
+        }
+        to{
+            background-color: dodgerblue;
+            margin-left: 500px;
+        }
+
+    }
+
+</style>
+
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
