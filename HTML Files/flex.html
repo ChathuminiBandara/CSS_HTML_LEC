@@ -3,79 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Flex</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        section{
+            width: 100vw;
+            height: 500px;
+            border: 2px solid orange;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
 
+        section>div{
+            width: 200px;
+            height: 200px;
 
-<style>
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;        }
+        section>div:first-child{
+            background-color: lightpink;
 
-    section{
-        background-color: dimgrey;
-        height: 500px;
-        border: 2px black;
-        justify-content: space-around;
-    }
+        }
+        section>div:nth-child(2){
+            align-self: center;
+            background-color: pink;
+        }
+        section>div:nth-child(3){
+            width: 200px;
+            aspect-ratio: 1/1;
+            align-self: end;
+            background-color: hotpink;
+        }
 
-    section:first-child{
-        width: 10vw;
-        height: 10vh;
-        background-color: lightpink;
-        align-self: center;
+        section>div:nth-child(4){
+            background-color: deeppink;
+            align-self: center;
+        }
 
+        section>div:nth-child(5){
+            background-color: mediumpurple;
+        }
 
-    }
-
-    section:nth-child(2){
-        width: 10vw;
-        height: 10vh;
-        background-color: hotpink;
-        justify-content: right;
-    }
-
-
-    section:nth-child(3){
-        width: 10vw;
-        height: 10vh;
-        background-color: deeppink;
-        align-self: end;
-    }
-
-    section:nth-child(4){
-        width: 10vw;
-        height: 10vh;
-        background-color: mediumpurple;
-        align-self: center;
-    }
-
-    section:nth-child(5){
-        width: 10vw;
-        height: 10vh;
-        background-color: rebeccapurple;
-    }
-
-
-    section:last-child{
-        width: 10vw;
-        height: 10vh;
-        background-color: pink;
-        align-self: center;
-
-    }
+        section>div:nth-child(6){
+            background-color: rebeccapurple;
+            align-self: center;
+        }
 
 
 
-
-
-
-
-
-</style>
-
-
+    </style>
 
 </head>
 <body>
-
-
-<section id="section-1">
+<section>
     <div></div>
     <div></div>
     <div></div>
@@ -83,8 +62,5 @@
     <div></div>
     <div></div>
 </section>
-
-
-
 </body>
 </html>
