@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 4</title>
+
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        div::before{
+            content: "";
+            border : 6px solid red;
+            border-radius: 0%;
+            aspect-ratio: 1/1;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+           /* transition-duration: 3s;*/
+
+            animation: rotate  4s infinite linear;
+        }
+
+        @keyframes rotate {
+            from{
+
+                transform: rotate(0deg);
+
+            }
+            to{
+                transform: rotate(360deg);
+
+            }
+        }
+
+
+
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+
+</body>
+</html>
