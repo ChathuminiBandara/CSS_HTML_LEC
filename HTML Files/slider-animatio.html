@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slider-animation</title>
+    <link rel=stylesheet href="normalize.css">
+
+
+    <style>
+
+        main{
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+
+            display: flex;
+            width: 50vw;
+            height: 50vh;
+            border: red 2px solid;
+        }
+
+        main>section{
+            height: 50vh;
+            width: 50vw;
+            border: black 2px solid;
+            display: flex;
+            position: absolute;
+
+
+            animation-duration: 3s;
+            animation-direction: alternate;
+
+        }
+
+        main>section:first-child{
+            background-image: url("View/slide/slide1.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        main>section:nth-child(2){
+            background-image: url("View/slide/slide2.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        main>section:nth-child(3){
+            background-image: url("View/slide/slide3.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        main>section:last-child{
+            background-image: url("View/slide/slide4.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        @keyframes anim {
+            0% , 20%{
+               transform: translateX(-50vw);
+            }
+            25% , 45%{
+                transform: translateX(-100vw);
+            }
+            50%, 75%{
+                transform: translateX(-150vw);
+            }
+            80% , 100%{
+                transform: translateX(-200vw);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+<div></div>
+
+</body>
+</html>
