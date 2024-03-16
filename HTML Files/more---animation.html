@@ -13,15 +13,17 @@
     }
 
     div{
+        overflow: ;
         width: var(--width);
         height: var(--height);
         border-radius: 10%;
 
         animation-duration: 5s;
         animation-name: animi;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite;  /*play wenna ona wara gana*/
         animation-delay: 3s;
-        animation-direction: normal;
+        animation-timing-function: linear; /*ekama wegayen*/
+        animation-direction: alternate;  /*peocess eka apassata wenwa*/
 
     }
 
@@ -32,17 +34,25 @@
         }
 
         25%{
+            rotate: 180deg;
             background-color: dodgerblue;
+            margin-top: 0;
             margin-left: calc(100vw - 20vw);
         }
 
         50%{
+            rotate: 0deg;
             margin-bottom: 0;
+            margin-top: calc(100vw - 20vw);
+            margin-left: calc(100vw - 20vw);
             background-color: purple;
         }
 
         75%{
+            rotate: -180deg;
             background-color: deeppink;
+            margin-top: calc(100vh - 20vh);
+            margin-bottom: 0;
             margin-left: 0;
         }
 

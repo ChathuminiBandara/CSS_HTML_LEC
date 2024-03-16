@@ -1,160 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <title>assignment 3 - case 3</title>
-    <link rel=stylesheet href="normalize.css">
-
-  <style>
+    <title>animations</title>
 
 
-      #div1{
-          width: 200px;
-          aspect-ratio: 1/1;
+    <style>
+
+        :root{
+            --width: 20vw;
+            --height: 100px;
+        }
+
+        div{
+
+            width: var(--width);
+            height: var(--height);
+            border-radius: 10%;
+
+            animation-duration: 5s;
+            animation-name: animi;
+            animation-iteration-count: infinite;  /*play wenna ona wara gana*/
+            animation-delay: 3s;
+            animation-timing-function: linear; /*ekama wegayen*/
+            animation-direction: alternate;  /*peocess eka apassata wenwa*/
+
+        }
+
+        @keyframes animi {
+            0%{
+                background-color: #051e5d;
+                margin-left: 0;
+            }
+
+            25%{
+                rotate: 180deg;
+                background-color: dodgerblue;
+                margin-top: 0;
+                margin-left: calc(100vw - 20vw);
+            }
+
+            50%{
+                rotate: 0deg;
+                margin-bottom: 0;
+                margin-top: calc(100vw - 20vw);
+                margin-left: calc(100vw - 20vw);
+                background-color: purple;
+            }
+
+            75%{
+                rotate: -180deg;
+                background-color: deeppink;
+                margin-top: calc(100vh - 20vh);
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+
+        }
 
 
-          animation-duration: 5s;
-          animation-name: animi;
-          /*
-          animation-iteration-count: infinite;
-          */
-          animation-delay: 3s;
-
-          /*
-          animation-direction: reverse
-          */
-          animation-direction: normal;
-
-          /*
-          animation-timing-function: ease-out;
-          */
-
-          /* animation-play-state: paused , running;*/
-
-      }
-
-      @keyframes animi {
-          from{
-              background-color: #051e5d;
-              margin-left: 0;
-          }
-          to{
-              background-color: dodgerblue;
-              margin-left: 500px;
-          }
-
-      }
-
-
-      #d2{
-          width: 200px;
-          height: 70px;
-          background-color: red;
-
-      }
-
-      #d3{
-          width: 200px;
-          height: 100px;
-          background-color: red;
-
-      }
-
-      #d4{
-          width: 200px;
-          height: 100px;
-          background-color: red;
-
-      }
-
-
-      @keyframes frame1 {
-          from{
-              background-color: rebeccapurple;
-          }
-
-          to{
-
-          }
-
-      }
-
-      @keyframes frame2 {
-          from{
-              background-color: rebeccapurple;
-          }
-
-          to{
-
-          }
-
-      }
-
-      @keyframes frame3 {
-          from{
-              background-color: rebeccapurple;
-          }
-
-          to{
-
-          }
-
-      }
-
-      @keyframes frame4 {
-          from{
-              background-color: rebeccapurple;
-          }
-
-          to{
-
-          }
-
-      }
-
-      div{
-          width: 200px;
-          height: 200px;
-
-          animation: animation 5s infinite;
-
-      }
-
-      @keyframes animation {
-          from{
-              background-color: rebeccapurple;
-              border-radius: 0%;
-          }
-          to{
-              background-color: deeppink;
-              border-radius: 100%;
-          }
-
-      }
-
-  </style>
+    </style>
 
 
 </head>
 <body>
 
-
-
-
-
-  <section>
-      <div id="d1"></div>
-     <!-- <div id="d2"></div>
-      <div id="d3"></div>
-      <div id="d4"></div>-->
-
-
-  </section>
-
-
-
-
+<div></div>
 
 </body>
 </html>
