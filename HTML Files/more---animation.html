@@ -7,38 +7,47 @@
 
 <style>
 
-    div{
-        width: 200px;
-        aspect-ratio: 1/1;
+    :root{
+        --width: 20vw;
+        --height: 100px;
+    }
 
+    div{
+        width: var(--width);
+        height: var(--height);
+        border-radius: 10%;
 
         animation-duration: 5s;
         animation-name: animi;
         animation-iteration-count: infinite;
         animation-delay: 3s;
-
-        /*
-        animation-direction: reverse
-        */
-        animation-direction: alternate-reverse;
-
-        animation-timing-function: ease-out;
-
-       /* animation-play-state: paused , running;*/
+        animation-direction: normal;
 
     }
 
     @keyframes animi {
-        from{
+        0%{
             background-color: #051e5d;
             margin-left: 0;
         }
-        to{
+
+        25%{
             background-color: dodgerblue;
-            margin-left: 500px;
+            margin-left: calc(100vw - 20vw);
+        }
+
+        50%{
+            margin-bottom: 0;
+            background-color: purple;
+        }
+
+        75%{
+            background-color: deeppink;
+            margin-left: 0;
         }
 
     }
+
 
 </style>
 
